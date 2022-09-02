@@ -1,4 +1,5 @@
 // migrating the appropriate contracts
+var Ownable = artifacts.require("./Ownable.sol");
 var FarmerRole = artifacts.require("./FarmerRole.sol");
 var DistributorRole = artifacts.require("./DistributorRole.sol");
 var RetailerRole = artifacts.require("./RetailerRole.sol");
@@ -11,4 +12,5 @@ module.exports = function(deployer) {
   deployer.deploy(RetailerRole);
   deployer.deploy(ConsumerRole);
   deployer.deploy(SupplyChain);
+  // deployer.deploy(Ownable);
 };
